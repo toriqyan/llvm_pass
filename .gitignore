@@ -1,0 +1,8 @@
+*.DS_Store
+*._CMakeLists.txt
+*._PROJPASS
+CMakeCache.txt
+*CMakeFiles
+*_PROJPASS.cpp
+*.so
+*.cmake
