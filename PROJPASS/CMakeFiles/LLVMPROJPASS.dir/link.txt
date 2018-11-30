@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC   -Wl,-rpath-link,  -Wl,-O3 -Wl,--gc-sections -shared  -o LLVMPROJPASS.so CMakeFiles/LLVMPROJPASS.dir/PROJPASS.cpp.o -Wl,-rpath,"\$ORIGIN/../lib" 
