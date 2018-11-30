@@ -1,0 +1,14 @@
+/home/toriqyan/EECS583/llvm_pass/CMakeFiles/install/strip.dir
+/home/toriqyan/EECS583/llvm_pass/CMakeFiles/edit_cache.dir
+/home/toriqyan/EECS583/llvm_pass/CMakeFiles/intrinsics_gen.dir
+/home/toriqyan/EECS583/llvm_pass/CMakeFiles/rebuild_cache.dir
+/home/toriqyan/EECS583/llvm_pass/CMakeFiles/list_install_components.dir
+/home/toriqyan/EECS583/llvm_pass/CMakeFiles/install/local.dir
+/home/toriqyan/EECS583/llvm_pass/CMakeFiles/install.dir
+/home/toriqyan/EECS583/llvm_pass/PROJPASS/CMakeFiles/install/strip.dir
+/home/toriqyan/EECS583/llvm_pass/PROJPASS/CMakeFiles/edit_cache.dir
+/home/toriqyan/EECS583/llvm_pass/PROJPASS/CMakeFiles/LLVMPROJPASS.dir
+/home/toriqyan/EECS583/llvm_pass/PROJPASS/CMakeFiles/rebuild_cache.dir
+/home/toriqyan/EECS583/llvm_pass/PROJPASS/CMakeFiles/list_install_components.dir
+/home/toriqyan/EECS583/llvm_pass/PROJPASS/CMakeFiles/install/local.dir
+/home/toriqyan/EECS583/llvm_pass/PROJPASS/CMakeFiles/install.dir
