@@ -6,3 +6,4 @@ CMakeCache.txt
 *_PROJPASS.cpp
 *.so
 *.cmake
+*Makefile
