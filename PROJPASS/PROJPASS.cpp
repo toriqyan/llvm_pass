@@ -153,6 +153,12 @@ namespace {
               for (BasicBlock::iterator II = BB->end(); II != BB->begin();) {
                 Instruction &I = *--II;
                 if (I.getOpcode() == Instruction::Load || I.getOpcode() == Instruction::Store) {
+                  llvm::Value* operand;
+                  if (I.getOpcode() == Instruction::Load) {
+                    operand = I.getOperand(0);
+                  } else {
+                    operand = I.getOperand(1);
+                  }
                   IRBuilder<> builder(BB, II);
                   std::vector<llvm::Type *> args;
                   args.push_back(llvm::Type::getInt8PtrTy(c));
@@ -164,7 +170,7 @@ namespace {
                   llvm::Value *formatStr = builder.CreateGlobalStringPtr("%p\n");
                   values.clear();
                   values.push_back(formatStr);
-                  values.push_back(I.getOperand(0));
+                  values.push_back(operand);
                   builder.CreateCall(printfFunc, values);
                 }
               }
