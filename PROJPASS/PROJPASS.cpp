@@ -154,7 +154,6 @@ namespace {
                 Instruction &I = *--II;
                 if (I.getOpcode() == Instruction::Load || I.getOpcode() == Instruction::Store) {
                   IRBuilder<> builder(BB, II);
-                  // builder.SetInsertPoint();
                   std::vector<llvm::Type *> args;
                   args.push_back(llvm::Type::getInt8PtrTy(c));
                   llvm::FunctionType *printfType =
@@ -162,9 +161,10 @@ namespace {
                   llvm::Constant *printfFunc =
                       MM->getOrInsertFunction("printf", printfType);
                   std::vector<llvm::Value *> values;
-                  llvm::Value *formatStr = builder.CreateGlobalStringPtr("\n");
+                  llvm::Value *formatStr = builder.CreateGlobalStringPtr("%p\n");
                   values.clear();
                   values.push_back(formatStr);
+                  values.push_back(I.getOperand(0));
                   builder.CreateCall(printfFunc, values);
                 }
               }
